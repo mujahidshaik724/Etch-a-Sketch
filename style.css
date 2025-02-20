@@ -5,16 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-   background-image: linear-gradient(
-    to right,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet 
-  );
+ 
 }
 
 #container {
@@ -25,13 +16,16 @@ body {
   height: 90vmin;
   background-color: white;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .grid-item {
   border: 1px solid;
   box-sizing: border-box;
   flex: 1 0 calc(100% / var(--grid-size)); /*width according to the grids and availavle space */
-  height: calc(100% / var(--grid-size));/*height according to the grids and availavle space*/
+  height: calc(
+    100% / var(--grid-size)
+  ); /*height according to the grids and availavle space*/
 }
 
 #gridSize,
@@ -42,20 +36,21 @@ body {
   /* background-color: rgb(9, 9, 47);  */
 }
 
-#gridSize:hover, #clear:hover {
-  background-color: #0a2039; 
+#gridSize:hover,
+#clear:hover {
+  background-color: #0a2039;
   color: white;
 }
 
-#gridSize:active, #clear:active {
+#gridSize:active,
+#clear:active {
   background-color: #c3cbd3;
-  
 }
 
-#body-background:hover{
-  background-color: #0a2039; 
+#body-background:hover {
+  background-color: #0a2039;
   color: white;
 }
-#body-background{
-  background-color: #c3cbd3; 
+#body-background {
+  background-color: #c3cbd3;
 }
